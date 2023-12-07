@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SharePhotos.Views.DisplayImage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20, 20, 20, 20" BackgroundColor="#262626">
+            
+            <Grid ColumnDefinitions="0.5*, 0.5*" RowDefinitions="*">
+                <Button x:Name="DeleteImage" Text="Borrar" HorizontalOptions="FillAndExpand" VerticalOptions="Center"
+        IsEnabled="false" IsVisible="False" Clicked="DeleteImage_Clicked" BackgroundColor="DarkMagenta" FontSize="Medium" TextColor="White"
+                        Grid.Column="1" Margin="20,20,20,20"></Button>
+
+                <Button x:Name="UpdateImage" Text="Actualizar" HorizontalOptions="FillAndExpand" VerticalOptions="Center"
+        IsEnabled="false" IsVisible="False" Clicked="UpdateImage_Clicked" BackgroundColor="DarkMagenta" FontSize="Medium" TextColor="White"
+                        Grid.Column="0" Margin="20,20,20,20"></Button>
+            </Grid>
+            
+            <Image x:Name="LoadedImage"
+           HeightRequest="290" Aspect="AspectFit"
+           Margin="10,10,10,10"></Image>
+            <Label x:Name="txtTitle" Text="" Margin="15,15,15,15" TextColor="White" FontSize="Title"></Label>
+            <Label x:Name="txtUsuario" Text="" Margin="15,15,15,15" TextColor="White" FontSize="Caption"></Label>
+            <Label x:Name="txtDescription" Text = "" Margin="15,15,15,15" TextColor="White" FontSize="Body" LineBreakMode="CharacterWrap"></Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

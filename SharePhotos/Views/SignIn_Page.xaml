@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SharePhotos.Views.SignIn_Page">
+    <ScrollView>
+        <VerticalStackLayout Padding="20, 20, 20, 20" BackgroundColor="#262626">
+            <Image Source="icono.png"
+           HeightRequest="290" Aspect="AspectFit"
+           Margin="0,0,0,30"></Image>
+            <Entry x:Name="txtUserName" Placeholder="Ingrese su usuario"
+           Margin="0,0,0,15" TextColor="White"></Entry>
+             <Entry x:Name="txtEmail" Placeholder="Ingrese su correo"
+           Margin="0,0,0,15" TextColor="White"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Ingrese su contraseña"
+           Margin="0,0,0,15" IsPassword="True" TextColor="White"
+           ></Entry>
+            <Button x:Name="boton_Registro" Text="Registrarse"
+            Margin="0,0,0,15" BackgroundColor="DarkMagenta"
+            FontSize="Medium" TextColor="White"
+                Clicked="boton_Registro_Clicked"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

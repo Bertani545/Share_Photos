@@ -1,0 +1,6 @@
+@SharePhotos.API_HostAddress = http://localhost:5012
+
+GET {{SharePhotos.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
